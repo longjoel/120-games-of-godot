@@ -1,0 +1,6 @@
+This is 120 games of godot. My first kind of serious attempt to get started with godot. My first 
+game will be Roll'n'bounce. You will control a ball on a board by pushing it with your mouse. It
+might be the first game that might be more fun on a touch pad. The goal will be to push the ball 
+down the fastest to get the high score.
+
+It will be 3d, because 3d is easier than 2d. Weird right?
