@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://c40cmc68jg3sn"]
+
+[node name="TopOfStaircase" type="Node3D"]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.10509, 0)
+use_collision = true
+size = Vector3(4, 0.5, 4)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0114746, -0.737356, 2.43358)
+use_collision = true
+size = Vector3(4.12451, 1.28467, 1)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="."]
+transform = Transform3D(0.999901, 0.0122485, 0.00698204, -0.012443, 0.999515, 0.0285342, -0.00662918, -0.0286183, 0.999568, 0.00767158, -0.689537, -2.18896)
+use_collision = true
+size = Vector3(4.06152, 1.34668, 0.640381)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.09575, -0.690735, 0.225433)
+use_collision = true
+size = Vector3(0.333221, 1.34705, 5.40289)

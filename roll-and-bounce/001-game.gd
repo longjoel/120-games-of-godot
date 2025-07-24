@@ -5,6 +5,13 @@ This is the first game. I am very excited to write it. I can't wait to see where
 """
 extends Node
 
+
+func MoveBall(push:Vector3):
+	
+	$RollyBall.apply_torque_impulse(push.normalized())
+	
+	pass
+
 # let's try to push it wth the mouse.
 # How fast did we move?
 var enterVertex:Vector2 = Vector2.ZERO
@@ -23,8 +30,13 @@ func _physics_process(delta: float) -> void:
 	# let's do camera tracking.
 	
 	$TrackingCamera.position.y = $RollyBall.position.y+5
+	$TrackingCamera.position.x = $RollyBall.position.x+5
+	$TrackingCamera.position.z = $RollyBall.position.z+5
 	
 	$TrackingCamera.look_at($RollyBall.position)
+	
+	$RollyBall/N.position = $RollyBall.position
+	$RollyBall/N.position.z -= 2
 	
 	pass
 
@@ -47,7 +59,7 @@ func _on_rolly_ball_mouse_exited() -> void:
 	
 	# Holy crap. I can't believe this worked.
 	
-	var push = Vector3(dxdy.x/dt, 0, dxdy.y/dt)
+	var push = Vector3(dxdy.y/dt, 0, -dxdy.x/dt)
 	
 	$RollyBall.apply_torque_impulse(push.normalized())
 	
